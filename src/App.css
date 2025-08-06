@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.gradient-container {
+  background: radial-gradient(circle at 20% 20%, #ff00ff, transparent),
+    radial-gradient(circle at 60% 40%, #00ff00, transparent),
+    radial-gradient(circle at 40% 80%, #0000ff, transparent);
+  animation: colorShift 10s infinite ease-in-out;
+}
+
+@keyframes colorShift {
+  0% {
+    background: radial-gradient(circle at 20% 20%, #ff00ff, transparent),
+      radial-gradient(circle at 60% 40%, #00ff00, transparent),
+      radial-gradient(circle at 40% 80%, #0000ff, transparent);
+  }
+  25% {
+    background: radial-gradient(circle at 30% 70%, #00ff00, transparent),
+      radial-gradient(circle at 80% 30%, #0000ff, transparent),
+      radial-gradient(circle at 10% 50%, #ff00ff, transparent);
+  }
+  50% {
+    background: radial-gradient(circle at 50% 10%, #0000ff, transparent),
+      radial-gradient(circle at 70% 60%, #ff00ff, transparent),
+      radial-gradient(circle at 20% 90%, #00ff00, transparent);
+  }
+  75% {
+    background: radial-gradient(circle at 40% 30%, #ff00ff, transparent),
+      radial-gradient(circle at 90% 70%, #00ff00, transparent),
+      radial-gradient(circle at 60% 10%, #0000ff, transparent);
+  }
+  100% {
+    background: radial-gradient(circle at 20% 20%, #ff00ff, transparent),
+      radial-gradient(circle at 60% 40%, #00ff00, transparent),
+      radial-gradient(circle at 40% 80%, #0000ff, transparent);
+  }
+}
